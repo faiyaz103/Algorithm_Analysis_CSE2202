@@ -4,7 +4,7 @@ const int N=100;
 const int INF=10000;
 vector<pair<int,int>> g[N+1]; //<to vertex, weight>
 
-void dijkstra(int src,int v){
+void dijkstra(int src){
 
     vector<int> dis(N+1,INF);
     vector<bool> vis(N+1,false);
@@ -61,7 +61,7 @@ int main(){
     int src;
     cin>>src;
 
-    dijkstra(src,v);
+    dijkstra(src);
 
     return 0;
 }
